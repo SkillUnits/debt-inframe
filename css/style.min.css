@@ -1,0 +1,176 @@
+@media screen and (max-width: 760px) {
+    .logo {
+        width: 162px;
+        margin: 18px 16px;
+    }
+    .header-button {
+        font-size: 14px;
+        width: 129px;
+        height: 32px;
+    }
+    .quiz-container h1 {
+        font-size: 23px;
+    }
+    .quiz {
+        margin-top: 32px;
+    }
+    .quiz-question {
+        font-size: 16px;
+    }
+    #result {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .buttons {
+        margin-top: 20px;
+        row-gap: 10px;
+    }
+    .buttons button {
+        height: 32px;
+        font-size: 16px;
+    }
+    .checkbox-group {
+        row-gap: 10px;
+        font-size: 14px;
+    }
+    .checkmark {
+        top: 0;
+    }
+    .slider::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+        background-size: 10px;
+    }
+    .slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        background-size: 10px;
+    }
+    .debt-range p {
+        font-size: 14px;
+    }
+    section {
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    .how-it-works {
+        max-width: 327px;
+    }
+    .steps {
+        margin-top: 20px;
+    }
+    .points {
+        height: 138px;
+    }
+    .point {
+        width: 24px;
+        height: 24px;
+    }
+    .steps-container {
+        margin-left: 12px;
+    }
+    .steps-container-inner {
+        height: 138px;
+        margin-right: 12px;
+    }
+    .step {
+        font-size: 16px;
+        height: 24px;
+    }
+    .faqs-list {
+        margin-top: 20px;
+    }
+    .question {
+        font-size: 16px;
+        height: 48px;
+    }
+    .answer {
+        font-size: 16px;
+    }
+    .question .chevron {
+        width: 20px;
+    }
+    .answer.visible {
+        padding-bottom: 15px;
+    }
+    section:last-child h2 {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .goodbye-button {
+        font-size: 14px;
+        max-width: 174px;
+        height: 32px;
+        margin: 24px auto 0 auto;
+    }
+    footer {
+        padding-top: 40px;
+    }
+    .footer-inner {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .feedback-card {
+        max-width: 320px;
+        height: 175px;
+    }
+    .feedback-stars {
+        width: 110px;
+    }
+    .feedback-card-inner {
+        padding: 14px;
+    }
+    .feedback-info p {
+        font-size: 14px;
+    }
+    .feedback-content {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .feedbacks {
+        display: none;
+    }
+    .swiper {
+        display: block !important;
+        max-width: 400px;
+        width: 100%;
+    }
+    .verified-image {
+        width: 14px;
+        height: 14px;
+        margin-top: 2px;
+    }
+    .feedbacks-inner {
+        padding: 40px 0;
+    }
+    .feedback-card-inner {
+        padding: 12px;
+    }
+    .feedback-info p {
+        font-size: 12px;
+    }
+    .feedback-stars {
+        width: 100px;
+    }
+    .feedback-content {
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+    .feedback-card {
+        width: 90%;
+        height: 146px;
+        margin: 0 auto;
+    }
+    .feedbacks-container {
+        width: 90%;
+    }
+}

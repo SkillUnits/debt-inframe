@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script/quiz-es.js"></script>
+    <script src="script/faq-list.js"></script>
+    <script src="script/swiper.js" type="module"></script>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="images/logo.png" alt="">
+        <a class="header-button" href="tel:" >+1 xxx xxx xxx</a>
+    </nav>
+    <main>
+        <section class="quiz-container">
+            <h1>
+                Los estadounidenses con más de 15.000 dólares de deuda en tarjetas de crédito y al corriente de pago pueden acogerse al programa "Debt free US"
+            </h1>
+            <div id="quiz" class="quiz">
+                <p id="quiz-question" class="quiz-question">¿Tienes una deuda de tarjeta de crédito de entre 15.000 y 100.000 dólares?</p>
+                <div class="buttons">
+                    <button class="yes-button" onclick="handleAnswer('yes')">Sí</button>
+                    <button class="no-button" onclick="handleAnswer('no')">No</button>
+                    <button class="skip-button" onclick="handleAnswer('skip')">Siguiente</button>  
+                </div>
+            </div>
+            <div id="result" style="display: none;">No está aprobado</div>
+        </section>
+        <section>
+            <div class="feedbacks-container">
+                <div class="feedbacks-inner">
+                    <h2>Conozca a algunas de las innumerables personas a las que hemos ayudado</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-inner">
+                                        <div class="feedback-info">
+                                            <p class="name">Emily R.</p>
+                                            <p> · </p>
+                                            <p class="verified">Llamada verificada</p>
+                                            <img class="verified-image" src="images/checkbox-mob.png" alt="">
+                                        </div>
+                                        <img class="feedback-stars" src="images/stars.svg" alt="">
+                                        <p class="feedback-content">
+                                            Free Freedom Debt redujo mi deuda de 28.500 dólares a 9.200 dólares en una sola llamada, ¡ahora por fin estoy libre de estrés!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-inner">
+                                        <div class="feedback-info">
+                                            <p class="name">James T.</p>
+                                            <p> · </p>
+                                            <p class="verified">Llamada verificada</p>
+                                            <img class="verified-image" src="images/checkbox-mob.png" alt="">
+                                        </div>
+                                        <img class="feedback-stars" src="images/stars.svg" alt="">
+                                        <p style="word-wrap: break-word;" class="feedback-content">
+                                            Redujeron mis pagos en un 65%, ¡ahorrán- dome más de 18.000 dólares! Siento como si me hubieran quitado un peso de encima.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-inner">
+                                        <div class="feedback-info">
+                                            <p class="name">Sophia L.</p>
+                                            <p> · </p>
+                                            <p class="verified">Llamada verificada</p>
+                                            <img class="verified-image" src="images/checkbox-mob.png" alt="">
+                                        </div>
+                                        <img class="feedback-stars" src="images/stars.svg" alt="">
+                                        <p class="feedback-content">
+                                            Mi deuda pasó de 35.000 a 12.000 dólares tras una rápida llamada telefónica, ¡y mi puntuación crediticia se mantuvo intacta!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="feedbacks">
+                        <div class="feedback-card">
+                            <div class="feedback-card-inner">
+                                <div class="feedback-info">
+                                    <p class="name">Emily R.</p>
+                                    <p> · </p>
+                                    <p class="verified">Llamada verificada</p>
+                                    <img class="verified-image" src="images/checkbox.svg" alt="">
+                                </div>
+                                <img class="feedback-stars" src="images/stars.svg" alt="">
+                                <p class="feedback-content">
+                                    Free Freedom Debt redujo mi deuda de 28.500 dólares a 9.200 dólares en una sola llamada, ¡ahora por fin estoy libre de estrés!      
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-card">
+                            <div class="feedback-card-inner">
+                                <div class="feedback-info">
+                                    <p class="name">James T.</p>
+                                    <p> · </p>
+                                    <p class="verified">Llamada verificada</p>
+                                    <img class="verified-image" src="images/checkbox.svg" alt="">
+                                </div>
+                                <img class="feedback-stars" src="images/stars.svg" alt="">
+                                <p class="feedback-content">
+                                    Redujeron mis pagos en un 65%, ¡ahorrándome más de 18.000 dólares! Siento como si me hubieran quitado un peso de encima.    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-card">
+                            <div class="feedback-card-inner">
+                                <div class="feedback-info">
+                                    <p class="name">Sophia L.</p>
+                                    <p> · </p>
+                                    <p class="verified">Llamada verificada</p>
+                                    <img class="verified-image" src="images/checkbox.svg" alt="">
+                                </div>
+                                <img class="feedback-stars" src="images/stars.svg" alt="">
+                                <p class="feedback-content">
+                                    Mi deuda pasó de 35.000 a 12.000 dólares tras una rápida llamada telefónica, ¡y mi puntuación crediticia se mantuvo intacta!   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="how-it-works">
+                <h2>Cómo funciona</h2>
+                <div class="steps">
+                    <div class="points">
+                        <div class="point">1</div>
+                        <div class="point">2</div>
+                        <div class="point">3</div>
+                    </div>
+                    <div class="steps-container">
+                        <div style="max-width: 280px;" class="steps-container-inner">
+                            <p class="step">Rellene nuestro sencillo formulario de 2 pasos</p>
+                            <p class="step">Obtenga la cualificación en una llamada rápida de 15 minutos</p>
+                            <p class="step">Ahorre mensualmente y elimine sus deudas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>FAQ`s</h2>
+            <div class="faqs-list">
+                <div class="faqs-item">
+                    <div class="question">
+                        <p>¿Afectará la liquidación de deudas a mi puntuación crediticia?</p>
+                        <img class="chevron" src="images/chevron.svg" alt="" width="24" height="24">
+                    </div>
+                    <div id="answer" class="answer">
+                        <p>No, cuando se maneja profesionalmente, la liquidación de deudas no afecta negativamente a su puntuación de crédito. Nos aseguramos de que el proceso se gestiona para proteger su reputación financiera.</p>
+                    </div>
+                </div>
+                <div class="faqs-item">
+                    <div class="question">
+                        <p>¿Cuánto puedo ahorrar con la liquidación de deudas?</p>
+                        <img class="chevron" src="images/chevron.svg" alt="" width="24" height="24">
+                    </div>
+                    <div id="answer" class="answer">
+                        <p>Por término medio, nuestros clientes ahorran entre un 40 y un 70% del total de su deuda. El ahorro exacto depende de su situación específica.</p>
+                    </div>
+                </div>
+                <div class="faqs-item">
+                    <div class="question">
+                        <p>¿En cuánto tiempo puedo reducir mi deuda?</p>
+                        <img class="chevron" src="images/chevron.svg" alt="" width="24" height="24">
+                    </div>
+                    <div id="answer" class="answer">
+                        <p>Después de rellenar el formulario de arriba, vamos a ver si usted califica. Si reúne los requisitos, verá un número de teléfono al que puede llamar. En la llamada podremos reducir lo que debes inmediatamente.</p>
+                    </div>
+                </div>
+                <div class="faqs-item">
+                    <div class="question">
+                        <p>¿Cómo puedo empezar?</p>
+                        <img class="chevron" src="images/chevron.svg" alt="" width="24" height="24">
+                    </div>
+                    <div id="answer" class="answer">
+                        <p>Empezar es muy fácil. Simplemente rellene nuestro formulario o llámenos, y uno de nuestros especialistas en el alivio de la deuda le guiará a través del proceso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color: rgba(97, 167, 0, 1); max-width: 700px;">Plazas limitadas para el programa Debt Free US Program: ¡no pierda la oportunidad de participar!</h2>
+            <a class="goodbye-button" href="tel:">Diga adiós a las deudas</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="links">
+                <a href="privacy-policy/index.html" rel="noopener">Política de privacidad</a>
+                <a href="" rel="noopener"> Condiciones de servicio </a>
+            </div>
+            <p style="text-align: center;">
+                Póngase en contacto con nosotros:<br> freefromdebt@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
