@@ -16,11 +16,32 @@
     <script src="script/quiz.js"></script>
     <script src="script/faq-list.js"></script>
     <script src="script/swiper.js" type="module"></script>
+
+    <script>
+		(function (w,d,s,o,f,js,fjs) { w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);}(window, document, 'script', 'mcc', 'https://marketcall.com/js/mc-calltracking.js'));
+		
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var newsbreak_cid = url.searchParams.get("newsbreak_cid");
+
+		mcc('init', { site: 749, serviceBaseUrl: '//www.marketcall.com' });
+		mcc('requestTrackingNumber', {campaign:"311725",selector:[{type:"dom",value:"a[href^='tel:']"}],mask:"+x (xxx) xxx-xx-xx",subid:"{subid}",subid1:"{tc_id}",subid2:newsbreak_cid});
+		</script>
+		<!-- Phone calls validation code -->
+		<!-- Install the code on all pages of your site -->
+		<script
+		id="__tc_script"
+		src="https://static.truecall.com/truecall.js"
+		data-campaign_uuid="06dqfudjo6fbl031kkou8z1762qzz1ds7hme"
+		data-skip_injection="true"
+		>
+	</script>
+
 </head>
 <body>
     <nav>
         <img class="logo" src="images/logo.png" alt="">
-        <a class="header-button" href="tel:" >+1 xxx xxx xxx</a>
+        <a class="header-button" href="tel:+1(888) 217-3304" >+1 (888) 217-3304</a>
     </nav>
     <main>
         <section class="quiz-container">
@@ -203,7 +224,7 @@
         </section>
         <section>
             <h2 style="color: rgba(97, 167, 0, 1); max-width: 700px;">Limited spots available for the Debt Free US Program—don’t miss your chance to qualify!</h2>
-            <a class="goodbye-button" href="tel:">Say goodbye to debt!</a>
+            <a class="goodbye-button" href="tel:+1(888) 217-3304">Say goodbye to debt!</a>
         </section>
     </main>
     <footer>
