@@ -48,7 +48,7 @@ function showNextExtendedQuestion(step) {
                 </label>
             </div>
             <div class="buttons">
-                <button class="skip-button" onclick="showNextExtendedQuestion(1)">Next</button>
+                <button class="yes-button" onclick="showNextExtendedQuestion(1)">Next</button>
             </div>
         `;
     } else if (step === 1) {
@@ -67,7 +67,7 @@ function showNextExtendedQuestion(step) {
                 </div>
             </div>
             <div class="buttons">
-                <button class="skip-button" onclick="handleSkip()">Finish</button>
+                <button class="yes-button" onclick="handleSkip()">Finish</button>
             </div>
         `;
     }

@@ -102,14 +102,14 @@ nav {
 .no-button:hover {
     background: rgb(243, 243, 243);
 }
-.skip-button {
+/* .skip-button {
     border: none;
     background: none;
     text-decoration: underline;
 }
 .skip-button:hover {
     color: rgb(73, 73, 73);
-}
+} */
 .checkbox-group {
     margin: 24px auto 0 auto;
     display: flex;
