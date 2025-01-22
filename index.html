@@ -19,13 +19,9 @@
 
     <script>
 		(function (w,d,s,o,f,js,fjs) { w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);}(window, document, 'script', 'mcc', 'https://marketcall.com/js/mc-calltracking.js'));
-		
-		var url_string = window.location.href;
-		var url = new URL(url_string);
-		var newsbreak_cid = url.searchParams.get("newsbreak_cid");
+        mcc('init', { site: 749, serviceBaseUrl: '//www.marketcall.com' });
 
-		mcc('init', { site: 749, serviceBaseUrl: '//www.marketcall.com' });
-		mcc('requestTrackingNumber', {campaign:"311725",selector:[{type:"dom",value:"a[href^='tel:']"}],mask:"+x (xxx) xxx-xx-xx",subid:"{subid}",subid1:"{tc_id}",subid2:newsbreak_cid});
+        mcc('requestTrackingNumber', {campaign:"311725",mask:"+x (xxx) xxx-xx-xx",subid:"{subid}"});
 		</script>
 		<!-- Phone calls validation code -->
 		<!-- Install the code on all pages of your site -->
