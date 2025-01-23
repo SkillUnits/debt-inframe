@@ -34,6 +34,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 16px;
+    padding: 0 8px;
 }
 .header-button:hover {
     background-color: #108F68;
