@@ -12,7 +12,8 @@ a {
 }
 
 nav {
-    background-color: rgba(17, 75, 95, 1);
+    position: relative;
+    background-color: #003B71;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,14 +29,14 @@ nav {
     width: 200px;
     height: 44px;
     border-radius: 4px;
-    background-color: rgba(159, 211, 86, 1);
+    background-color: #16ca92;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 16px;
 }
 .header-button:hover {
-    background-color: rgba(224, 255, 79, 1);
+    background-color: #108F68;
 }
 
 .quiz-container {
@@ -90,13 +91,13 @@ nav {
 }
 .yes-button {
     border: none;
-    background-color: rgba(159, 211, 86, 1);
+    background-color: #16ca92;
 }
 .yes-button:hover {
-    background-color: rgba(224, 255, 79, 1);
+    background-color: #108F68;
 }
 .no-button {
-    border: 1px solid rgba(159, 211, 86, 1);
+    border: 1px solid #16ca92;
     background: none;
 }
 .no-button:hover {
@@ -111,7 +112,7 @@ nav {
     color: rgb(73, 73, 73);
 } */
 .checkbox-group {
-    margin: 24px auto 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
@@ -143,7 +144,7 @@ nav {
     width: 20px;
     border-radius: 4px;
     background: none;
-    border: 1px solid rgba(97, 167, 0, 1);
+    border: 1px solid #16ca92;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +163,7 @@ nav {
 .container .checkmark:after {
     width: 5px;
     height: 10px;
-    border: solid rgba(97, 167, 0, 1);
+    border: solid #16ca92;
     border-width: 0 1px 1px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -187,7 +188,7 @@ nav {
     appearance: none;
     width: 42px;
     height: 42px;
-    background: rgba(159, 211, 86, 1);
+    background: #16ca92;
     border: none;
     border-radius: 100%;
     cursor: pointer;
@@ -198,7 +199,7 @@ nav {
 .slider::-moz-range-thumb {
     width: 42px;
     height: 42px;
-    background: rgba(159, 211, 86, 1);
+    background: #16ca92;
     border: none;
     border-radius: 100%;
     cursor: pointer;
@@ -304,21 +305,21 @@ h2 {
     height: 40px;
     font-size: 12px;
     border-radius: 100%;
-    background-color: rgba(159, 211, 86, 1);
+    background-color: #16ca92;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .point:last-child {
-    background-color: rgba(224, 255, 79, 1);
-    box-shadow: 0 0 0 0 rgba(247, 255, 211, 1);
+    background-color: #6ee9c4;
+    box-shadow: 0 0 0 0 #a8fce3;
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     transition: all 300ms ease-in-out;
 }
 
 @keyframes pulse{
     0% {
-        box-shadow: 0 0 0 0 rgba(247, 255, 211, 1);
+        box-shadow: 0 0 0 0 #a8fce3;
     }
     70% {
         box-shadow: 0 0 0 10px rgba(33, 212, 7, 0);
@@ -392,7 +393,7 @@ h2 {
     transition: max-height 0.1s ease, opacity 0.1s ease, padding 0.3s ease;
 }
 .question .chevron {
-    color: rgba(159, 211, 86, 1);
+    color: #16ca92;
 }
 .question .chevron.open {
     transform: rotate(180deg);
@@ -405,12 +406,15 @@ h2 {
     width: 90%;
     height: 44px;
     border-radius: 4px;
-    background-color: rgba(159, 211, 86, 1);
+    background-color: #16ca92;
     color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px auto 0 auto;
+}
+.goodbye-button:hover {
+    background-color: #108F68;
 }
 
 footer {
@@ -420,7 +424,7 @@ footer {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: -0.2px;
-    color: rgba(17, 75, 95, 1);
+    color: #003B71;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -437,7 +441,7 @@ footer {
     padding-bottom: 14px;
 }
 .footer-inner a {
-    color: rgba(17, 75, 95, 1);
+    color: #003B71;
     font-size: inherit;
     text-decoration: underline;
 }
@@ -447,4 +451,13 @@ footer {
     margin-top: 20px;
     width: 100%;
     height: 186px;
+}
+
+.header-image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
 }
